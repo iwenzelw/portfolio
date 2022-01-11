@@ -1,89 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>wenzel.w</title>
+  <link href="style.css" rel="stylesheet" />
 </head>
-<body>
-  <table cellspacing="15">
-    <td>
-      <img src="avatar180.jpeg" width="200" alt="foto"/>
-    </td>
-    <td>
-      <h1>Притыкин Вячеслав</h1>
-   <p> <em>Основатель компании <strong>Глобус-DEV</strong></em></p>
-   <p>Люблю путешествовать на авто, заниматься с собаками и програмировать</p>
-    </td>
-  </table>
-  
-  
-   <hr>
-   <h2>Мои социальные сети</h2>
-   <ul type="circle">
-     <li><a href="https://www.instagram.com/iwenzelw" target="_blank">instagram</a></li>
-     <li><a href="https://t.me/wenzel_w" target="_blank">telegram</a></li>
-     <li></li>
-   </ul>
-   <hr>
-   <h2>Мои хобби</h2>
-   <ol>
-     <li>Собаки</li>
-     <li>Програмироание</li>
-     <li>Автомобили</li>
-     <li>Путешествие</li>
-   </ol>
-   <hr>
-   <h2>Опыт Работы</h2>
-   
-   <table >
-     <head>
-       <tr>
-     <th>компания</th>
-     <th>должность</th>
-     <th>год</th>
-   </tr>
-     </head>
-     <tbody>
-       <tr>
-       <td>УАМЗ</td>
-       <td>мастер</td>
-       <td>2000-2001</td>
-     </tr>
-     </tbody>
-     <tfoot>
-       <tr>
-       <td>Автосервис</td>
-       <td>мастер</td>
-       <td>2001-2005</td>
-     </tr>
-     </tfoot>  
-   </table>
-   <hr>
-   <table>
-     <td>
-       <img src="https://free-png.ru/wp-content/uploads/2020/07/logo-you-tube-2-1.png" width="25">
-     </td>
-     <td><h1>Youtube Канал</h1></td>
-   </table>
-   
-  <a href="youtude.html" target="_blank">Посмотреть канал</a>
-  <hr>
-  <h2>Связаться со мной</h2>
 
-  <form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя ...">
-<br>
-    <label for="email">Ваше email:</label>
-    <input type="email" id="email" placeholder="Введите вашу почту ...">
-    <br>
-    <br>
-    <label for="text">Ваше Сообщение:</label><br>
-    <textarea type="text" id="text" placeholder="Введите ваше сообщение ..."></textarea>
-    <br>
-    <input type="submit" value="связаться">
-  </form>
+<body>
+  <div class="container">
+    <div class="info">
+      <img class="avatar" src="avatar180.jpeg" alt="foto" />
+      <div class="info-text">
+        <h1>Притыкин Вячеслав</h1>
+        <p>Основатель компании <strong>Глобус-DEV</strong></p>
+        <p>Люблю путешествовать на авто, заниматься с собаками и програмировать</p>
+        <div class="social">
+          <h4>Мои социальные сети</h4>
+          <a href="https://www.instagram.com/iwenzelw" target="_blank">instagram</a>
+          |
+          <a href="https://t.me/wenzel_w" target="_blank">telegram</a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="card bg-yellow">
+      <h2>Мои хобби</h2>
+      <ol class="list">
+        <li>Собаки</li>
+        <li>Програмироание</li>
+        <li>Автомобили</li>
+        <li>Путешествие</li>
+      </ol>
+    </div>
+
+    <div class="card bg-green">
+      <h2>Опыт Работы</h2>
+
+      <table class="table">
+
+        <head>
+        </head>
+        <tbody>
+          <tr>
+            <td>УАМЗ</td>
+            <td>мастер</td>
+            <td>2000-2001</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Автосервис</td>
+            <td>мастер</td>
+            <td>2001-2005</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="card bg-red">
+      <table>
+        <td>
+          <img src="https://free-png.ru/wp-content/uploads/2020/07/logo-you-tube-2-1.png" width="25">
+        </td>
+        <td>
+          <h2 class="link-list">Youtube Канал</h2>
+        </td>
+      </table>
+      <a href="youtude.html" target="_blank">Посмотреть канал</a>
+    </div>
+    <div class="contact">
+      <div class="card">
+        <h2>Связаться со мной</h2>
+
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя ...">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Ваше email:</label>
+              <input type="email" id="email" placeholder="Введите вашу почту ...">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="text">Ваше Сообщение:</label>
+            <textarea type="text" id="text" placeholder="Введите ваше сообщение ..."></textarea>
+          </div>
+
+
+          <input class="btn" type="submit" value="связаться">
+        </form>
+      </div>
+    </div>
+    
+    <div class="position">
+      <div class="box">
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-bottom:500px">
+
+  </div>
 </body>
+
 </html>
